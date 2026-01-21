@@ -1,0 +1,69 @@
+/* Color Palette */
+.root {
+    -fx-background-color: #121212; /* Deep Charcoal */
+    -fx-card-background: #1E1E1E; /* Slightly lighter dark for cards */
+    -fx-accent-color: #00d4ff; /* Electric Blue */
+    -fx-text-white: #FFFFFF; /* White for primary text */
+    -fx-text-grey: #8b9bb4; /* Cool Grey for secondary text/borders */
+}
+
+/* Typography */
+.label {
+    -fx-text-fill: -fx-text-white;
+    -fx-font-family: "Roboto", "Open Sans", sans-serif;
+}
+
+.label.heading {
+    -fx-font-family: "Montserrat", "Inter", sans-serif;
+    -fx-font-weight: bold;
+}
+
+.button {
+    -fx-text-fill: -fx-text-white;
+    -fx-background-color: transparent;
+    -fx-font-size: 14px;
+    -fx-alignment: CENTER-LEFT;
+}
+
+.button:hover {
+    -fx-background-color: derive(-fx-card-background, 20%); /* Subtle hover effect */
+}
+
+.text-field, .combo-box {
+    -fx-control-inner-background: -fx-card-background;
+    -fx-text-fill: -fx-text-white;
+    -fx-prompt-text-fill: derive(-fx-text-white, 50%);
+    -fx-background-radius: 5;
+    -fx-border-color: -fx-text-grey;
+    -fx-border-radius: 5;
+    -fx-border-width: 0.5px;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: -fx-text-white;
+    -fx-background-color: -fx-card-background;
+}
+
+.combo-box .list-cell:hover {
+    -fx-background-color: derive(-fx-card-background, 20%);
+}
+
+.check-box {
+    -fx-text-fill: -fx-text-white;
+}
+
+/* Specific component styling for dark mode */
+.sidebar {
+    -fx-background-color: -fx-card-background;
+}
+
+.card {
+    -fx-background-color: -fx-card-background;
+    -fx-background-radius: 5;
+    -fx-padding: 15px;
+}
+
+.separator {
+    -fx-background-color: -fx-text-grey;
+    -fx-max-height: 0.5px;
+}
